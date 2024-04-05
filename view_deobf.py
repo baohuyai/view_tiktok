@@ -16,6 +16,8 @@ import hashlib
 import json
 from urllib3.exceptions import InsecureRequestWarning
 from http import cookiejar
+from keep_alive import keep_alive
+
 #-----[MÀU VÀ BIẾN]-----#
 trang = "\033[1;37m"
 xanh_la = "\033[1;32m"
@@ -189,6 +191,7 @@ def fetch_proxies():
             pass
 
 if __name__ == "__main__":
+    keep_alive()  
     with open('devices.txt', 'r') as f:
         devices = f.read().splitlines()
     
@@ -203,7 +206,7 @@ if __name__ == "__main__":
     os.system("cls" if os.name == "nt" else "clear")
     print(banner)
     try:
-        link = input(f'{do}[{trang}{kt_code}{do}] {xanh_la}INPUT LINK VIDEO: {trang}')
+        link = os.getenv("url") #input(f'{do}[{trang}{kt_code}{do}] {xanh_la}INPUT LINK VIDEO: {trang}')
         print(f'{trang}- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -')
         __aweme_id = str(
             re.findall(r"(\d{18,19})", link)[0]
