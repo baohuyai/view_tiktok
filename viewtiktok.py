@@ -190,8 +190,7 @@ def fetch_proxies():
         else:
             pass
 
-if __name__ == "__main__":
-    keep_alive()  
+if __name__ == "__main__": 
     with open('devices.txt', 'r') as f:
         devices = f.read().splitlines()
     
@@ -227,7 +226,7 @@ if __name__ == "__main__":
     rps = 0
     
     threading.Thread(target=rpsm_loop).start()
-    
+    keep_alive() 
     
     while True:
         device = random.choice(devices)
