@@ -205,7 +205,7 @@ if __name__ == "__main__":
     os.system("cls" if os.name == "nt" else "clear")
     print(banner)
     try:
-        link = 'https://vt.tiktok.com/ZSFvbg4Qa/' #os.getenv("url") #input(f'{do}[{trang}{kt_code}{do}] {xanh_la}INPUT LINK VIDEO: {trang}')
+        link = 'https://vt.tiktok.com/ZSFcgU48B/' #os.getenv("url") #input(f'{do}[{trang}{kt_code}{do}] {xanh_la}INPUT LINK VIDEO: {trang}')
         print(f'{trang}- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -')
         __aweme_id = str(
             re.findall(r"(\d{18,19})", link)[0]
