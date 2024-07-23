@@ -1,6 +1,4 @@
-#Enc Như Con Cặc Vậy Hdt?
-#Crack Key: KhoiHuynh1109
-#Update: 7/9/2023 12:20
+
 from urllib.parse import urlencode
 import base64
 from pystyle import *
@@ -16,7 +14,7 @@ import hashlib
 import json
 from urllib3.exceptions import InsecureRequestWarning
 from http import cookiejar
-from keep_alive import keep_alive
+#from keep_alive import keep_alive
 
 #-----[MÀU VÀ BIẾN]-----#
 trang = "\033[1;37m"
@@ -205,7 +203,7 @@ if __name__ == "__main__":
     os.system("cls" if os.name == "nt" else "clear")
     print(banner)
     try:
-        link = 'https://vt.tiktok.com/ZSF3sABUe/' #os.getenv("url") #input(f'{do}[{trang}{kt_code}{do}] {xanh_la}INPUT LINK VIDEO: {trang}')
+        link = 'https://www.tiktok.com/@danghoangbaohuy.milo/video/7393327394343439636' #os.getenv("url") #input(f'{do}[{trang}{kt_code}{do}] {xanh_la}INPUT LINK VIDEO: {trang}')
         print(f'{trang}- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -')
         __aweme_id = str(
             re.findall(r"(\d{18,19})", link)[0]
